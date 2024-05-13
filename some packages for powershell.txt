@@ -1,0 +1,6 @@
+z
+oh my posh
+PSReadline
+Terminal-Icons
+posh-git
+git
