@@ -6,4 +6,4 @@ local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
 keymap.set("n", "<C-a>", "gg<S-v>G")
-keymap.set("i", "aa", "<esc><esc>")
+keymap.set("i", "jaa", "<esc><esc>")
