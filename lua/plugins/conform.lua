@@ -3,11 +3,6 @@ return {
   optional = true,
   opts = {
     formatters_by_ft = {
-      -- ["javascript"] = { "custom_prettier" },
-      -- ["javascriptreact"] = { "custom_prettier" },
-      -- ["typescript"] = { "custom_prettier" },
-      -- ["typescriptreact"] = { "custom_prettier" },
-      -- ["vue"] = { "custom_prettier" },
       ["javascriptreact"] = { "prettier" },
       ["typescript"] = { "prettier" },
       ["typescriptreact"] = { "prettier" },
@@ -27,11 +22,11 @@ return {
       ["java"] = { "google-java-format" },
       ["go"] = { "gofmpt", "goimports" },
       ["rust"] = { "rustfmt" },
+      ["python"] = { "black" },
     },
     formatters = {
-      custom_prettier = {
-        command = "prettier",
-        args = { "--no-semi", "--single-quote", "$FILENAME" },
+      prettier = {
+        prepend_args = { "--single-quote", "--no-semi", "--trailing-comma none", "--jsx-single-quote" },
       },
     },
   },
