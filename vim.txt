@@ -1,0 +1,4 @@
+imap jaa <esc><esc>
+nnoremap s <Nop>
+nmap s /
+nmap <C-Q> <C-V>
