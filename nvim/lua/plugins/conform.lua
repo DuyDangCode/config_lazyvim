@@ -19,14 +19,16 @@ return {
       ["markdown.mdx"] = { "prettier" },
       ["graphql"] = { "prettier" },
       ["handlebars"] = { "prettier" },
-      ["java"] = { "google-java-format" },
+      ["java"] = { "prettier" },
       ["go"] = { "gofmpt", "goimports" },
       ["rust"] = { "rustfmt" },
-      ["python"] = { "black" },
+      ["python"] = { "prettier" },
+      ["xml"] = { "prettier" },
     },
     formatters = {
       prettier = {
         prepend_args = { "--single-quote", "--no-semi", "--trailing-comma none", "--jsx-single-quote" },
+        -- prepend_args = { "--single-quote", "--trailing-comma none", "--jsx-single-quote" },
       },
     },
   },
